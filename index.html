@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trivia Quiz</h1>
+
+        <div class="controls">
+            <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="9">General Knowledge</option>
+                <option value="11">Movies</option>
+                <option value="23">History</option>
+            </select>
+
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <!-- Questions will be dynamically injected here -->
+        </div>
+
+        <div id="score-container" class="score-container">
+            <p>Your score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+            <button id="restart-btn" onclick="startQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
